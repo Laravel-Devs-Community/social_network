@@ -11,3 +11,20 @@ php artisan jetstream:install livewire
 
 php artisan migrate
 ```
+
+1. ### Upload Code to Repo
+
+```
+git init
+
+git add .
+
+git commit -M "Fisrt Commit"
+
+git branch -M main
+
+git remote add origin https://github.com/Laravel-Devs-Community/social_network.git
+
+git push -u origin master
+```
+
