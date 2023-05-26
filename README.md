@@ -4,11 +4,10 @@
 
 ```
 composer create-project laravel/laravel social_network
-
 composer require laravel/jetstream
-
 php artisan jetstream:install livewire
-
+npm install
+npm run build
 php artisan migrate
 ```
 
