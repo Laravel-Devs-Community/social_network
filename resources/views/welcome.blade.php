@@ -33,6 +33,7 @@
             <div class="max-w-7xl mx-auto p-6 lg:p-8">
                 <h1>{{ Config::get('app.name') }}</h1>
             </div>
+            
         </div>
     </body>
 </html>
