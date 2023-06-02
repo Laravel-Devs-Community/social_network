@@ -18,7 +18,7 @@ Route::middleware([
     //     return view('dashboard');
     // })->name('dashboard');
 
-    Route::get('/notifications', [PagesController::class, 'notifications'])->name('notifications');
-    Route::get('/messages', [PagesController::class, 'messages'])->name('messages');
-    Route::get('/friends', [PagesController::class, 'friends'])->name('friends');
+    Route::get('/notifications', \App\Http\Livewire\Notifications\Index::class)->name('notifications');
+    Route::get('/messages', \App\Http\Livewire\Messages\Index::class)->name('messages');
+    Route::get('/friends', \App\Http\Livewire\Friends\Index::class)->name('friends');
 });

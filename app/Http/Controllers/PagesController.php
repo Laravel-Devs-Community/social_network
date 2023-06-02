@@ -15,15 +15,4 @@ class PagesController extends Controller
         }
     }
 
-    public function notifications() {
-        return view('notifications');
-    }
-
-    public function messages() {
-        return view('messages');
-    }
-
-    public function friends() {
-        return view('friends');
-    }
 }
