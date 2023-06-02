@@ -5,3 +5,10 @@
 [x-cloak] {
     display: none;
 }
+
+.menu:hover,
+.menu--active {
+    @apply bg-gray-50;
+    @apply text-gray-800;
+    @apply border-indigo-500;
+}
