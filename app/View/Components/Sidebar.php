@@ -4,6 +4,7 @@ namespace App\View\Components;
 
 use Closure;
 use Illuminate\Contracts\View\View;
+use Illuminate\Support\Facades\Route;
 use Illuminate\View\Component;
 
 class sidebar extends Component
@@ -14,6 +15,10 @@ class sidebar extends Component
     public function __construct()
     {
         //
+    }
+
+    public function activeClass(string $routeName): string {
+        return Route::currentRouteName() === $routeName ? 'menu--active' : '';
     }
 
     /**
