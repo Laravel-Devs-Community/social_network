@@ -5,3 +5,32 @@
 [x-cloak] {
     display: none;
 }
+
+.image-label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.image-preview {
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 10px;
+}
+
+.image-input {
+    display: flex;
+    align-items: center;
+}
+
+/* .image-input input[type="file"] {
+    display: none;
+} */
+
+.image-input svg {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    margin-left: 10px;
+}
