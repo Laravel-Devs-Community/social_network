@@ -25,6 +25,7 @@
     "Browser Sessions": "Sesiones del navegador",
     "Cancel": "Cancelar",
     "click here to request another": "haga clic aquí para solicitar otro",
+    "Click here to re-send the verification email.": "Haga clic aquí para volver a enviar el correo electrónico de verificación.",
     "Close": "Cerrar",
     "Code": "Código",
     "Confirm": "Confirmar",
@@ -66,7 +67,7 @@
     "Home": "Inicio",
     "hi": "hey",
     "I agree to the :terms_of_service and :privacy_policy": "Acepto los :terms_of_service y la :privacy_policy",
-    "If necessary, you may logout of all of your other browser sessions across all of your devices. Some of your recent sessions are listed below; however, this list may not be exhaustive. If you feel your account has been compromised, you should also update your password.": "Si es necesario, puede salir de todas las demás sesiones de otros navegadores en todos sus dispositivos. Algunas de sus sesiones recientes se enumeran a continuación; sin embargo, es posible que esta lista no sea exhaustiva. Si cree que su cuenta se ha visto comprometida, también debería actualizar su contraseña.",
+    "If necessary, you may log out of all of your other browser sessions across all of your devices. Some of your recent sessions are listed below; however, this list may not be exhaustive. If you feel your account has been compromised, you should also update your password.": "Si es necesario, puede salir de todas las demás sesiones de otros navegadores en todos sus dispositivos. Algunas de sus sesiones recientes se enumeran a continuación; sin embargo, es posible que esta lista no sea exhaustiva. Si cree que su cuenta se ha visto comprometida, también debería actualizar su contraseña.",
     "If you already have an account, you may accept this invitation by clicking the button below:": "Si ya tiene una cuenta, puede aceptar esta invitación haciendo clic en el botón de abajo:",
     "If you did not create an account, no further action is required.": "Si no ha creado una cuenta, no se requiere ninguna acción adicional.",
     "If you did not expect to receive an invitation to this team, you may discard this email.": "Si no esperaba recibir una invitación para este equipo, puede descartar este correo electrónico.",
@@ -84,7 +85,7 @@
     "Log Out": "Cerrar sesión",
     "Logout Other Browser Sessions": "Cerrar las demás sesiones",
     "Manage Account": "Administrar cuenta",
-    "Manage and logout your active sessions on other browsers and devices.": "Administre y cierre sus sesiones activas en otros navegadores y dispositivos.",
+    "Manage and log out your active sessions on other browsers and devices.": "Administre y cierre sus sesiones activas en otros navegadores y dispositivos.",
     "Manage API Tokens": "Administrar Tokens API",
     "Manage Role": "Administrar rol",
     "Manage Team": "Administrar equipo",
@@ -206,6 +207,7 @@
     "You may not delete your personal team.": "No se puede borrar su equipo personal.",
     "You may not leave a team that you created.": "No se puede abandonar un equipo que usted creó.",
     "Your email address is not verified.": "Su dirección de correo electrónico no está verificada.",
+    "Your email address is unverified.": "Su dirección de correo electrónico no está verificada.",
     "Post": "Publicar",
     "Post a comment...": "Escriba un comentario"
 }

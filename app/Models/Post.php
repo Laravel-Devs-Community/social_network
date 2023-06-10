@@ -33,7 +33,8 @@ class Post extends Model
 
     // Scopes
     public function scopeDeMiFeed( $query ) {
-        return $query;
+        $ids = [\Auth::user()->id];
+        return $query->whereIn('user_id',$ids);
     }
     
     // Campos lindos

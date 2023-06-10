@@ -16,6 +16,8 @@ class Index extends Component
     public $text ;
     public $image ;
 
+    // https://www.youtube.com/watch?v=WvVTYEC8FAQ
+
     protected function init() {
         $this->posts = Post::deMiFeed()->orderBy('created_at','desc')->get();
     }
@@ -26,10 +28,11 @@ class Index extends Component
 
     public function render()
     {
-        return view('livewire.posts.index');
+        return view('livewire.posts.index')->layout('layouts.main');
     }
 
     public function save() {
+        // rate limit
         $this->validate([
             'text' => 'required_without:image',
             'image' => 'required_without:text'
@@ -39,6 +42,7 @@ class Index extends Component
                 'image' => 'image|max:2048'
             ]); 
         }
+        // intervention/image
         $valores['text'] = $this->text;
         if( $this->image ) {
             $valores['photo'] = Storage::put( 'posts', $this->image );

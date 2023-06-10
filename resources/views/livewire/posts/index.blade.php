@@ -1,5 +1,6 @@
 <div>
     {{-- https://tailwindcomponents.com/component/social-media-concept --}}
+    
     <div class="block">
 
         {{-- Create post --}}
@@ -59,7 +60,9 @@
                     </div>
                 @endif
                 {{-- Body --}}
-                <div class="text-gray-500 bg-gray-100 rounded text-sm mx-3 p-2">{{ $post->text }}<span class="text-gray-400"></span></div>
+                @if( $post->text)
+                    <div class="text-gray-500 bg-gray-100 rounded text-sm mx-3 p-2">{{ $post->text }}<span class="text-gray-400"></span></div>
+                @endif
                 {{-- Reactions --}}
                 {{-- <div class="flex justify-start mb-4 border-t border-gray-100">
                     <div class="flex justify-end w-full mt-1 pt-2 pr-5">
