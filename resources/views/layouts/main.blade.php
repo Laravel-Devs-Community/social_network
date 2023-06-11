@@ -13,11 +13,11 @@
         <!-- Styles -->
         @livewireStyles
     </head>
-    <body class="font-sans antialiased" x-data="{ openMenu : false }" :class="openMenu ? 'overflow-hidden' : 'overflow-visible' ">
+    <body>
         <div class="min-h-screen bg-gray-50">
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
                 <div class="bg-gray-100 overflow-hidden shadow-xl sm:rounded-lg">
-                    <div class="flex h-screen  dark:bg-gray-900" :class="{ 'overflow-hidden': isSideMenuOpen}">
+                    <div class="flex h-screen  dark:bg-gray-900">
                         <!-- Desktop sidebar -->
                         <x-sidebar></x-sidebar>
                         <div class="flex flex-col flex-1">

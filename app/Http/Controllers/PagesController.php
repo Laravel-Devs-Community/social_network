@@ -15,6 +15,10 @@ class PagesController extends Controller
         }
     }
 
+    public function me() {
+        return view('me');
+    }
+
     public function test() {
         return view('test');
     }

@@ -4,7 +4,7 @@
     <div class="block">
 
         {{-- Create post --}}
-        <div class="pt-10">
+        <div class="pt-4">
             <form
                 wire:submit.prevent="save"
                 enctype="multipart/form-data"

@@ -11,7 +11,7 @@ Route::middleware(['auth:sanctum',config('jetstream.auth_session'),'verified'])-
     Route::get('/', \App\Http\Livewire\Posts\Index::class)->name('home');
 
 
-
+    Route::get('/me', [PagesController::class,'me'])->name('me');
     Route::get('/notifications', \App\Http\Livewire\Notifications\Index::class)->name('notifications');
     Route::get('/messages', \App\Http\Livewire\Messages\Index::class)->name('messages');
     Route::get('/friends', \App\Http\Livewire\Friends\Index::class)->name('friends');
