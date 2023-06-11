@@ -17,12 +17,13 @@
         <div class="min-h-screen bg-gray-50">
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
                 <div class="bg-gray-100 overflow-hidden shadow-xl sm:rounded-lg">
-                    <div class="flex h-screen  dark:bg-gray-900">
-                        <!-- Desktop sidebar -->
-                        <x-sidebar></x-sidebar>
-                        <div class="flex flex-col flex-1">
-                            <x-header></x-header>
-                            <main class="h-full pb-16 overflow-y-auto px-3">
+                    <div class="h-screen  dark:bg-gray-900">
+                        <x-header />
+                        <div class="flex">
+                            @if( Auth::user()->hasVerifiedEmail())
+                                <x-sidebar />
+                            @endauth
+                            <main class="w-full h-full pb-16 overflow-y-auto px-3">
                                 {{ $slot }}
                             </main>
                         </div>

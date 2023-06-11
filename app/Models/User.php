@@ -60,4 +60,9 @@ class User extends Authenticatable implements MustVerifyEmail
     protected $appends = [
         'profile_photo_url',
     ];
+    
+    public function hasVerifiedEmail()
+    {
+        return !is_null($this->email_verified_at);
+    }
 }
