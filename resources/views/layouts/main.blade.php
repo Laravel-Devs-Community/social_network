@@ -14,22 +14,16 @@
         @livewireStyles
     </head>
     <body>
-        <div class="min-h-screen bg-gray-50">
-            <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-                <div class="bg-gray-100 overflow-hidden shadow-xl sm:rounded-lg">
-                    <div class="h-screen  dark:bg-gray-900">
-                        <x-header />
-                        <div class="flex">
-                            @if( Auth::user()->hasVerifiedEmail())
-                                <x-sidebar />
-                            @endauth
-                            <main class="w-full h-full pb-16 overflow-y-auto px-3">
-                                {{ $slot }}
-                            </main>
-                        </div>
-                    </div>
+        <div class="min-h-screen bg-gray-50 max-w-7xl mx-auto sm:px-6 lg:px-8">
+            <div class="bg-gray-100 overflow-hidden shadow-xl sm:rounded-lg dark:bg-gray-900">
+                <x-header/>
+                @if( Auth::user()->hasVerifiedEmail())
+                    <x-sidebar />
+                @endauth
+                <div class="p-4 sm:ml-64 mt-14 min-h-screen">
+                    {{ $slot }}
                 </div>
-            </div>        
+            </div>
         </div>
         @stack('modals')
         @livewireScripts

@@ -39,7 +39,7 @@ class Index extends Component
         ]);
         if( $this->image ) {
             $this->validate([
-                'image' => 'image|max:2048'
+                'image' => 'image|max:1024'
             ]); 
         }
         // intervention/image
@@ -50,7 +50,6 @@ class Index extends Component
         $this->post->create( $valores );
         $this->reset('text','image');
         $this->init() ;
-        // $this->posts = Post::deMiFeed()->orderBy('created_at','desc')->get();
     }
 
 }

@@ -9,6 +9,13 @@
                 wire:submit.prevent="save"
                 enctype="multipart/form-data"
                 class="bg-white shadow rounded-lg mb-6 p-4 w-full">
+                @if( $image )
+                    <img
+                        class="h-auto w-full rounded px-4 mb-4"
+                        src="{{ $image->temporaryUrl() }}"
+                        alt=""
+                    >
+                @endif
                 <textarea wire:model="text" name="message" placeholder="{{ __('Type something...') }}" class=" focus:outline-none  w-full rounded-lg p-2 text-sm bg-gray-100 border border-transparent appearance-none rounded-tg placeholder-gray-400"></textarea>
                 @error('text')
                     <span class="text-xs text-red-500">{{ $message }}</span>
