@@ -15,11 +15,13 @@
     </head>
     <body>
         <x-header/>
-        @if( Auth::user()->hasVerifiedEmail())
-            <x-sidebar />
-        @endauth
-        <div class="p-4 sm:ml-64 mt-14 min-h-screen bg-gray-100">
-            {{ $slot }}
+        <div class="flex">
+            @if( Auth::user()->hasVerifiedEmail() )        
+                <x-sidebar />
+            @endauth
+            <div class="p-4 w-full sm:ml-52 mt-14 min-h-screen bg-gray-100">
+                {{ $slot }}
+            </div>
         </div>
         @stack('modals')
         @livewireScripts

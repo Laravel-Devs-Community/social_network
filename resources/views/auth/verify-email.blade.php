@@ -11,7 +11,7 @@
             </div>
         @endif
 
-        <div class="mt-4 flex items-center justify-between">
+        <div class="mt-4 flex  justify-between align-top">
             <form method="POST" action="{{ route('verification.send') }}">
                 @csrf
                 <x-button type="submit">
@@ -19,22 +19,18 @@
                 </x-button>
             </form>
 
-                <a
-                    href="{{ route('profile.show') }}"
-                    class="ml-2 text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-                >
-                    <x-button>
-                        {{ __('Edit Profile') }}
-                    </x-button>
-                </a>
+            <a href="{{ route('profile.show') }}" class="ml-2 text-sm">
+                <x-button>
+                    {{ __('Edit Profile') }}
+                </x-button>
+            </a>
 
-                <form method="POST" action="{{ route('logout') }}" class="inline">
-                    @csrf
-                    <x-button type="submit" class="ml-2 text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-                        {{ __('Log Out') }}
-                    </x-button>
-                </form>
-
+            <form method="POST" action="{{ route('logout') }}">
+                @csrf
+                <x-button type="submit" class="ml-2 text-sm">
+                    {{ __('Log Out') }}
+                </x-button>
+            </form>
         </div>
     </x-authentication-card>
 </x-main-layout>
